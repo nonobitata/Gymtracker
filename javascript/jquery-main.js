@@ -1,12 +1,16 @@
-$(document).ready(function(){
-    // $(".infoSectionClass").click(function() {
-    // 	$(".infoSectionClass").hide();
-    // });
-	$(".infoSectionClass ul").hide();
-    $(".infoSectionClass").hover(function(){
-  		$(".infoSectionClass ul").show();
- 	}, function() {
-     $(".infoSectionClass ul").hide();
- });
+$(document).ready(function()
+{
+	$("#addCategory").click(addACategory);
+	$(".addActivity").click(addAnActivity);
+
 });
 
+function addACategory(event)
+{
+		alert("This will let you add an category!");
+}   
+	
+function addAnActivity(event)
+{
+		alert("This will let you add a activity!");
+} 
