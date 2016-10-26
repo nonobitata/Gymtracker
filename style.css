@@ -19,6 +19,11 @@ img{
 	height: auto;
 	width: auto;
 }
+
+#graph{
+	max-width: 25%;
+	max-height:25%;
+}
 .jumbotron {
     position: relative;
     margin-top: 75px;
@@ -198,7 +203,7 @@ ul.social li img{
 footer.second{
 	border-top:  1px solid #4D4E50;
 	background: black;
-	max-height: 50px;
+	max-height: 65px;
 	text-align: center;
 	opacity: 0.95;
 }
@@ -218,7 +223,7 @@ footer.second{
 		display: none;
 /*		position: absolute;
 */		padding: 20px;
-		background: #405580;
+		background: black;
 		border: 1px solid #FFF;
 		right:20px;
 		top:60px;
@@ -250,3 +255,41 @@ footer.second{
 		margin: auto;
 	}
 }
+
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;
+   padding:0;
+   /*border: 1px solid red;*/
+	} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {
+	padding-top:75px;
+	text-align: center;
+	color: black;
+	background: black;
+
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
