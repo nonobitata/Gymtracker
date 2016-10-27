@@ -287,6 +287,10 @@ html, body {height: 100%;}
 	float:center;
 	background: white;
 }
+#main #graph-button{
+	float:center;
+	/*background: white;*/
+}
 /*Opera Fix*/
 body:before {/* thanks to Maleika (Kohoutec)*/
 content:"";
